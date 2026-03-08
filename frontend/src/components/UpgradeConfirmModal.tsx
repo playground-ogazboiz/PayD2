@@ -410,7 +410,9 @@ export default function UpgradeConfirmModal({
         {/* Modal header */}
         <div className="flex items-center justify-between px-4 md:px-6 pt-4 md:pt-6 pb-3 md:pb-4 border-b border-hi flex-shrink-0">
           <div className="min-w-0 flex-1">
-            <h2 className="text-base md:text-lg font-black tracking-tight truncate">Upgrade Contract</h2>
+            <h2 className="text-base md:text-lg font-black tracking-tight truncate">
+              Upgrade Contract
+            </h2>
             <p className="text-xs text-muted font-mono mt-0.5 truncate">{contract.name}</p>
           </div>
           {!['executing', 'simulating'].includes(modal.step) && (

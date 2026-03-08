@@ -395,7 +395,7 @@ export default function RevenueSplitDashboard() {
                   </tbody>
                 </table>
               </div>
-              
+
               {/* Mobile Card View */}
               <div className="md:hidden space-y-3">
                 {events.map((event) => (
@@ -411,7 +411,9 @@ export default function RevenueSplitDashboard() {
                     <div className="space-y-1 text-xs">
                       <div className="flex justify-between">
                         <span className="text-zinc-400">Recipient:</span>
-                        <span className="text-zinc-300 truncate max-w-[150px]">{event.recipientLabel}</span>
+                        <span className="text-zinc-300 truncate max-w-[150px]">
+                          {event.recipientLabel}
+                        </span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-zinc-400">Amount:</span>

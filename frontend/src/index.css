@@ -162,20 +162,30 @@ select {
 /* ── Mobile Responsive Enhancements ── */
 
 /* Touch-friendly tap targets */
-button, a, input, select, textarea {
+button,
+a,
+input,
+select,
+textarea {
   min-height: 44px;
   min-width: 44px;
 }
 
 /* Exceptions for small inline elements */
-button:not([class*="touch-manipulation"]):not([class*="min-h"]):not([class*="h-"]):not([class*="p-"]):not([class*="px-"]):not([class*="py-"]) {
+button:not([class*='touch-manipulation']):not([class*='min-h']):not([class*='h-']):not(
+    [class*='p-']
+  ):not([class*='px-']):not([class*='py-']) {
   min-height: 44px;
   min-width: 44px;
 }
 
 /* Small icon buttons and links */
-button[class*="w-4"], button[class*="w-5"], button[class*="w-6"],
-a[class*="w-4"], a[class*="w-5"], a[class*="w-6"] {
+button[class*='w-4'],
+button[class*='w-5'],
+button[class*='w-6'],
+a[class*='w-4'],
+a[class*='w-5'],
+a[class*='w-6'] {
   min-height: 44px;
   min-width: 44px;
   display: inline-flex;
@@ -219,7 +229,9 @@ a[class*="w-4"], a[class*="w-5"], a[class*="w-6"] {
 
 /* Form input mobile improvements */
 @media (max-width: 768px) {
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     font-size: 16px; /* Prevents zoom on iOS */
   }
 }
