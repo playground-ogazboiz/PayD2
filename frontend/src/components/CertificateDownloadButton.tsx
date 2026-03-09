@@ -62,7 +62,7 @@ export function CertificateDownloadButton({
           setEmployeeId(info.employeeId);
           setOrganizationId(info.organizationId);
         }
-      } catch (error) {
+      } catch {
         // Continue to show error below
       } finally {
         setIsLoadingInfo(false);
@@ -84,7 +84,10 @@ export function CertificateDownloadButton({
         transactionHash,
         organizationId: finalOrganizationId,
       });
-      notifySuccess('Certificate Downloaded', 'Payment certificate has been downloaded successfully');
+      notifySuccess(
+        'Certificate Downloaded',
+        'Payment certificate has been downloaded successfully'
+      );
     } catch (error) {
       notifyError(
         'Download Failed',
